@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+#apidata{
+    padding-top: 15px;
+    font-family: Space Mono;
+    color: azure;
+}
+
+.search-box{
+    font-family: Space Mono;
+    width: 300px;
+}
+
+
+body{
+    background-color:darkslateblue;
+    margin:0;
+}
+
+.navigation-bar{
+    overflow: hidden;
+    background-color:rgb(5, 5, 5);
+}
+.active{
+    background-color:darkorchid;
+}
+.navigation-bar a{
+    float:left;
+    display:block;
+    color:azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: None;
+    font-family: Space Mono;
+}
+
+.navigation-bar a:hover{
+    background-color:violet;
+    color: black;
+}
+
+@font-face {
+    font-family: Space Mono;
+    src: url(https://fonts.gstatic.com/s/spacemono/v12/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2);
+}
+
+
+.header{
+    color: azure;
+    font-family: Space Mono;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.column{
+    background-color:darkorchid;
+    float: left;
+    width: 25%;
+    padding : 40px;
+    margin-left:15px;
+    
+    font-family: Space Mono;
+    color:azure;
+}
+
+.column2{
+    background-color: rgb(92, 85, 144);
+    float: left;
+    width: 70%;
+    padding: 30px;
+    margin-left: 15px;
+    font-family: Space Mono;
+    color:azure;
+}
+
+#mytext-justify{
+    text-align:justify;
+}
+
+a:link{
+    color:white;
+}
+a:visited{
+    color:white;
+}
+.paragraph-column2{
+    float:left;
+    width:48%;
+    margin:0.5%;
+    padding:15px;
+    text-align: justify;
+    color: azure;
+}
+.paragraph-column3{
+    float:right;
+    width:47%;
+    padding:10px;
+    text-align: justify;
+    color: azure;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.paragraph1{
+    color: azure;
+
+}
+
+.paragraph2{
+    color:azure;
+    text-align: justify;
+}
+
+.column-projects{
+    background-color: rgb(92, 85, 144);
+    float: left;
+    width: 48.5%;
+    padding: 30px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-family: Space Mono;
+    color:azure;
+}
+
+@media screen and (max-width: 1000px) {
+    .column{
+        width: 100%;
+    }
+    .column2{
+        width: 100%;
+    }
+    .column3{
+        width:100%;
+    }
+    .paragraph-column2{
+        width:100%;
+    }
+    .column-projects{
+        width:100%;
+    }
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.134);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+}
+  
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.479);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.479);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.dotsactive, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
