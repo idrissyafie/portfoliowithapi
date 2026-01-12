@@ -81,7 +81,7 @@
     </div>
 
     <div class="column2">
-        <p id="mytext-justify">Hello, My name is Idris Syafie Bin Khajar, I am 22 years old currently studying at University Malaysia Pahang(UMP).
+        <p id="mytext-justify">Hello, My name is Idris Syafie Bin Khajar, I am <span id="age"></span> years old currently studying at University Malaysia Pahang(UMP).
             I am familiar in Automation Systems and handling its components such as Programmable Logic Controllers, Internet of Things
             System and Web Application development.<br>
         </p>
@@ -128,3 +128,7 @@
 
 </body>
 </html>
+
+<script>
+    document.getElementById('age').innerHTML = new Date('2000-11-02').getYear() - new Date().getYear()
+</script>
