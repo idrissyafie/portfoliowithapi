@@ -130,5 +130,20 @@
 </html>
 
 <script>
-    document.getElementById('age').innerHTML = new Date('2000-11-02').getYear() - new Date().getYear()
+    const birthDate = new Date('2000-11-02');
+    const today = new Date();
+    
+    let age = today.getFullYear() - birthDate.getFullYear();
+    
+    // Adjust if birthday hasn’t occurred yet this year
+    const hasBirthdayPassed =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+    
+    if (!hasBirthdayPassed) {
+      age--;
+    }
+    
+    document.getElementById('age').innerHTML = age;
+
 </script>
